@@ -1,0 +1,17 @@
+RewriteEngine On
+# Never serve dotfiles (.env, .git, .htaccess itself, etc.) even if one
+# ends up inside public/ by mistake.
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+# Never serve raw SQL, log, or backup files that might get uploaded here.
+<FilesMatch "\.(sql|log|bak|zip|tar|gz|env)$">
+    Require all denied
+</FilesMatch>
+# public/uploads has its own .htaccess (see public/uploads/.htaccess)
+# that disables PHP execution in that folder — handled there, not here.
+
+# If the request is not for an existing file or directory, route it to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
