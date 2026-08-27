@@ -1,0 +1,21 @@
+# Belt-and-braces: no file in this directory should ever be executed as
+# PHP, regardless of extension or how the host runs PHP (mod_php,
+# php-fpm, or CGI all get blocked by different rules below).
+
+# mod_php hosts
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php7.c>
+    php_flag engine off
+</IfModule>
+
+# Portable fallback that works even without mod_php: strip PHP's file
+# handler for these extensions and serve them as inert plain text.
+<IfModule mod_mime.c>
+    RemoveHandler .php .phtml .php3 .php4 .php5 .php7 .php8 .phar .pl .py .cgi .asp .sh
+    RemoveType .php .phtml .php3 .php4 .php5 .php7 .php8 .phar
+    AddType text/plain .php .phtml .php3 .php4 .php5 .php7 .php8 .phar
+</IfModule>
+
+Options -ExecCGI
