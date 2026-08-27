@@ -1,1 +1,0 @@
-# StockPilot_Inventory_management_Software
