@@ -1,15 +1,7 @@
-<<<<<<< HEAD
-<div class="split-layout split-md">
-    <div class="card">
-        <div class="card-header"><h3>All Users</h3></div>
-        <div class="table-responsive">
-<table>
-=======
 <div style="display:grid; grid-template-columns: 1fr 340px; gap:20px; align-items:start;">
     <div class="card">
         <div class="card-header"><h3>All Users</h3></div>
         <table>
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
             <thead><tr><th>Name</th><th>Email</th><th>Role</th><th>Status</th><th>Last Login</th><th style="min-width:260px;">Update</th></tr></thead>
             <tbody>
             <?php foreach ($users as $u): ?>
@@ -26,20 +18,12 @@
                         <form method="POST" action="<?= base_url("/users/{$u['id']}/update") ?>" style="display:flex; gap:6px; flex-wrap:wrap; align-items:center;">
                             <input type="hidden" name="_csrf" value="<?= htmlspecialchars($csrf) ?>">
                             <input type="hidden" name="name" value="<?= htmlspecialchars($u['name']) ?>">
-<<<<<<< HEAD
-                            <select name="role" class="select-compact">
-=======
                             <select name="role" style="width:100px;">
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
                                 <option value="admin" <?= $u['role'] === 'admin' ? 'selected' : '' ?>>Admin</option>
                                 <option value="manager" <?= $u['role'] === 'manager' ? 'selected' : '' ?>>Manager</option>
                                 <option value="cashier" <?= $u['role'] === 'cashier' ? 'selected' : '' ?>>Cashier</option>
                             </select>
-<<<<<<< HEAD
-                            <select name="status" class="select-compact">
-=======
                             <select name="status" style="width:90px;">
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
                                 <option value="active" <?= $u['status'] === 'active' ? 'selected' : '' ?>>Active</option>
                                 <option value="inactive" <?= $u['status'] === 'inactive' ? 'selected' : '' ?>>Inactive</option>
                             </select>
@@ -51,10 +35,6 @@
             <?php endforeach; ?>
             </tbody>
         </table>
-<<<<<<< HEAD
-</div>
-=======
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
     </div>
 
     <div class="card">

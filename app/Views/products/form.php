@@ -9,11 +9,7 @@
             <input type="text" name="name" required value="<?= htmlspecialchars($product['name'] ?? '') ?>">
         </div>
 
-<<<<<<< HEAD
-        <div class="form-grid-2">
-=======
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
             <div class="form-group">
                 <label>Category</label>
                 <select name="category_id" required>
@@ -29,11 +25,7 @@
             </div>
         </div>
 
-<<<<<<< HEAD
-        <div class="form-grid-2">
-=======
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
             <div class="form-group">
                 <label>SKU</label>
                 <input type="text" name="sku" required value="<?= htmlspecialchars($product['sku'] ?? '') ?>">
@@ -44,11 +36,7 @@
             </div>
         </div>
 
-<<<<<<< HEAD
-        <div class="form-grid-3">
-=======
         <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px;">
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
             <div class="form-group">
                 <label>Cost Price (₹)</label>
                 <input type="number" step="0.01" min="0" name="cost_price" value="<?= htmlspecialchars($product['cost_price'] ?? '0') ?>">
@@ -63,11 +51,7 @@
             </div>
         </div>
 
-<<<<<<< HEAD
-        <div class="form-grid-3">
-=======
         <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px;">
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
             <div class="form-group">
                 <label>Stock Qty</label>
                 <input type="number" min="0" name="stock_qty" value="<?= htmlspecialchars($product['stock_qty'] ?? '0') ?>">
@@ -85,11 +69,7 @@
             </div>
         </div>
 
-<<<<<<< HEAD
-        <div class="inline-actions" style="margin-top:8px;">
-=======
         <div style="display:flex; gap:10px; margin-top:8px;">
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
             <button type="submit" class="btn btn-primary"><?= $isEdit ? 'Save Changes' : 'Add Product' ?></button>
             <a href="<?= base_url('/products') ?>" class="btn btn-outline">Cancel</a>
         </div>

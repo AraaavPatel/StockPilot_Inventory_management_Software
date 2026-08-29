@@ -3,8 +3,7 @@
         <h3>Purchase History</h3>
         <a href="<?= base_url('/purchases/create') ?>" class="btn btn-accent btn-sm">+ Record Purchase</a>
     </div>
-    <div class="table-responsive">
-<table>
+    <table>
         <thead><tr><th>Date</th><th>Supplier</th><th>Invoice #</th><th>Recorded By</th><th>Total</th></tr></thead>
         <tbody>
         <?php foreach ($purchases as $p): ?>
@@ -21,5 +20,4 @@
         <?php endif; ?>
         </tbody>
     </table>
-</div>
 </div>

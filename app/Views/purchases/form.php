@@ -5,7 +5,7 @@
         <input type="hidden" name="_csrf" value="<?= htmlspecialchars($csrf) ?>">
         <input type="hidden" name="items" id="itemsInput">
 
-        <div class="form-grid-2">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
             <div class="form-group">
                 <label>Supplier</label>
                 <select name="supplier_id" required>
@@ -21,7 +21,7 @@
             </div>
         </div>
 
-        <div class="form-grid-2">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
             <div class="form-group">
                 <label>Purchase Date</label>
                 <input type="date" name="purchase_date" value="<?= date('Y-m-d') ?>" required>
@@ -34,12 +34,10 @@
 
         <div class="form-group">
             <label>Products Received</label>
-            <div class="table-responsive">
-<table>
+            <table>
                 <thead><tr><th>Product</th><th style="width:100px;">Qty</th><th style="width:120px;">Unit Cost</th><th style="width:100px;">Line Total</th><th></th></tr></thead>
                 <tbody id="lineItemsBody"></tbody>
             </table>
-</div>
             <button type="button" class="btn btn-outline btn-sm" id="addLineBtn" style="margin-top:10px;">+ Add Line</button>
         </div>
 
@@ -47,7 +45,7 @@
             Total: <span id="grandTotal">₹0.00</span>
         </div>
 
-        <div class="inline-actions">
+        <div style="display:flex; gap:10px;">
             <button type="submit" class="btn btn-primary">Save Purchase &amp; Update Stock</button>
             <a href="<?= base_url('/purchases') ?>" class="btn btn-outline">Cancel</a>
         </div>

@@ -7,7 +7,7 @@
             <span class="badge" style="background:#c0392b; color:#fff;">BROKEN — records may have been altered directly in the database</span>
         <?php endif; ?>
     </div>
-    <form method="GET" action="<?= base_url('/audit-logs') ?>" class="inline-actions">
+    <form method="GET" action="<?= base_url('/audit-logs') ?>" style="display:flex; gap:8px;">
         <input type="text" name="action" placeholder="Action e.g. LOGIN_FAILED" value="<?= htmlspecialchars($_GET['action'] ?? '') ?>">
         <input type="text" name="module" placeholder="Module e.g. products" value="<?= htmlspecialchars($_GET['module'] ?? '') ?>">
         <button type="submit" class="btn btn-outline btn-sm">Filter</button>
@@ -15,8 +15,7 @@
 </div>
 
 <div class="card">
-    <div class="table-responsive">
-<table>
+    <table>
         <thead><tr><th>Date/Time</th><th>User</th><th>Action</th><th>Module</th><th>Entity</th><th>IP</th><th>Request ID</th></tr></thead>
         <tbody>
         <?php foreach ($logs as $l): ?>
@@ -33,9 +32,8 @@
         <?php if (empty($logs)): ?><tr><td colspan="7">No matching audit records.</td></tr><?php endif; ?>
         </tbody>
     </table>
-</div>
 
-    <div class="inline-actions center" style="margin-top:16px;">
+    <div style="display:flex; gap:8px; justify-content:center; margin-top:16px;">
         <?php for ($i = 1; $i <= $totalPages; $i++): ?>
             <a class="btn btn-outline btn-sm <?= $i === $page ? 'active' : '' ?>" href="<?= base_url("/audit-logs?page={$i}") ?>"><?= $i ?></a>
         <?php endfor; ?>

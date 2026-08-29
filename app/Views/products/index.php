@@ -6,10 +6,6 @@
             <a href="<?= base_url('/products/create') ?>" class="btn btn-accent btn-sm">+ Add Product</a>
         <?php endif; ?>
     </div>
-<<<<<<< HEAD
-    <div class="table-responsive">
-=======
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
     <table>
         <thead>
             <tr><th>Name</th><th>Category</th><th>SKU / Barcode</th><th>Price</th><th>GST</th><th>Stock</th><th>Status</th><?php if ($canManage): ?><th></th><?php endif; ?></tr>
@@ -40,8 +36,4 @@
         <?php endif; ?>
         </tbody>
     </table>
-<<<<<<< HEAD
-    </div>
-=======
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
 </div>

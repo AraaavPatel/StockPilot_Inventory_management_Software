@@ -167,44 +167,6 @@ th, td { text-align: left; padding: 12px 10px; border-bottom: 1px solid var(--li
 th { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: #9a9a9a; font-weight: 800; border-bottom: 2px solid var(--ink); }
 tr:last-child td { border-bottom: none; }
 
-<<<<<<< HEAD
-/* Every data table on a hardware-narrower-than-content screen (phone, tablet,
-   a small POS panel) scrolls horizontally inside its own card instead of
-   blowing out the page layout. Table keeps a sane minimum width so columns
-   don't get crushed illegibly before the scrollbar kicks in. */
-.table-responsive {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-.table-responsive table { min-width: 560px; }
-.table-responsive.table-narrow table { min-width: 420px; }
-
-/* ---------- Layout primitives ---------- */
-/* Two-column "list + side form/panel" layouts used across Products, Categories,
-   Customers, Suppliers, Users, Stock Adjustments, Reports, Dashboard. Collapses
-   to a single column at the same breakpoint the sidebar nav collapses at, so
-   the side panel drops below the list instead of squeezing to unusable width. */
-.split-layout { display: grid; gap: 20px; align-items: start; }
-.split-layout.split-sm { grid-template-columns: 1fr 320px; }
-.split-layout.split-md { grid-template-columns: 1fr 340px; }
-.split-layout.split-lg { grid-template-columns: 1fr 360px; }
-.split-layout.split-even { grid-template-columns: 1fr 1fr; }
-.split-layout.split-dashboard { grid-template-columns: 1.6fr 1fr; }
-
-/* Multi-field form rows (Product/Purchase forms). Collapse to one column on
-   narrow phones so inputs stay full-width and thumb-tappable. */
-.form-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.form-grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
-
-.inline-actions { display: flex; gap: 10px; flex-wrap: wrap; }
-.inline-actions.center { justify-content: center; }
-.filter-bar { display: flex; gap: 10px; align-items: end; flex-wrap: wrap; }
-
-.select-compact { width: 100%; min-width: 88px; flex: 1 1 88px; }
-
-=======
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.03em; }
 .badge-success { background: var(--ink); color: #fff; }
 .badge-warning { background: var(--red); color: #fff; }
@@ -268,27 +230,6 @@ tr:last-child td { border-bottom: none; }
 
 .mobile-topbar-toggle { display: none; }
 
-<<<<<<< HEAD
-/* Split layouts collapse one breakpoint earlier than the sidebar (1180px vs
-   960px) — a 340px fixed side panel next to a data table is already too
-   tight on a small laptop or a portrait tablet well before the sidebar
-   itself needs to move. */
-@media (max-width: 1180px) {
-  .split-layout.split-sm,
-  .split-layout.split-md,
-  .split-layout.split-lg,
-  .split-layout.split-even,
-  .split-layout.split-dashboard {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 720px) {
-  .form-grid-2, .form-grid-3 { grid-template-columns: 1fr; }
-}
-
-=======
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
 @media (max-width: 960px) {
   .app-shell { flex-direction: column; }
 
@@ -357,19 +298,9 @@ tr:last-child td { border-bottom: none; }
   table { font-size: 12px; }
   th, td { padding: 8px 6px; }
 
-<<<<<<< HEAD
-  /* iOS Safari auto-zooms the page on focus for any field under 16px —
-     keep every input/select/textarea at 16px+ so typing on a phone or a
-     touchscreen POS terminal never jump-zooms the layout. */
-  input, select, textarea { font-size: 16px; }
-
-  /* ---- POS: single column, sticky checkout bar ---- */
-  .pos-grid { grid-template-columns: 1fr; gap: 14px; }
-=======
   /* ---- POS: single column, sticky checkout bar ---- */
   .pos-grid { grid-template-columns: 1fr; gap: 14px; }
   .pos-scan-box input { font-size: 16px; }
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
   .pos-qty-btn { width: 32px; height: 32px; font-size: 16px; }
 
   .pos-summary-card {

@@ -21,11 +21,7 @@
     </div>
 </div>
 
-<<<<<<< HEAD
-<div class="split-layout split-dashboard">
-=======
 <div style="display:grid; grid-template-columns: 1.6fr 1fr; gap:20px; align-items:start;">
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
     <div class="card">
         <div class="card-header"><h3>Sales — Last 7 Days</h3></div>
         <canvas id="salesTrendChart" height="90"></canvas>
@@ -36,12 +32,7 @@
         <?php if (empty($lowStock)): ?>
             <p>All products are above their reorder threshold.</p>
         <?php else: ?>
-<<<<<<< HEAD
-            <div class="table-responsive">
-<table>
-=======
             <table>
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
                 <thead><tr><th>Product</th><th>Qty</th><th>Threshold</th></tr></thead>
                 <tbody>
                 <?php foreach ($lowStock as $p): ?>
@@ -53,22 +44,13 @@
                 <?php endforeach; ?>
                 </tbody>
             </table>
-<<<<<<< HEAD
-</div>
-=======
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
         <?php endif; ?>
     </div>
 </div>
 
 <div class="card" style="margin-top:20px;">
     <div class="card-header"><h3>Recent Sales</h3></div>
-<<<<<<< HEAD
-    <div class="table-responsive">
-<table>
-=======
     <table>
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
         <thead>
         <tr><th>Invoice</th><th>Customer</th><th>Cashier</th><th>Payment</th><th>Amount</th><th>Date</th></tr>
         </thead>
@@ -89,10 +71,6 @@
         </tbody>
     </table>
 </div>
-<<<<<<< HEAD
-</div>
-=======
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <script>

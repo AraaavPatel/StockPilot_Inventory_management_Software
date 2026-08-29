@@ -1,15 +1,7 @@
-<<<<<<< HEAD
-<div class="split-layout split-sm">
-    <div class="card">
-        <div class="card-header"><h3>All Customers</h3></div>
-        <div class="table-responsive">
-<table>
-=======
 <div style="display:grid; grid-template-columns: 1fr 320px; gap:20px; align-items:start;">
     <div class="card">
         <div class="card-header"><h3>All Customers</h3></div>
         <table>
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
             <thead><tr><th>Name</th><th>Phone</th><th>Email</th><th>Loyalty Points</th></tr></thead>
             <tbody>
             <?php foreach ($customers as $c): ?>
@@ -23,10 +15,6 @@
             <?php endforeach; ?>
             </tbody>
         </table>
-<<<<<<< HEAD
-</div>
-=======
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
     </div>
 
     <div class="card">

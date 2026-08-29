@@ -2,35 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<<<<<<< HEAD
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-=======
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
     <title>Invoice <?= htmlspecialchars($sale['invoice_no']) ?></title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('assets/css/app.css') ?>">
     <style>
         body { background: var(--canvas); padding: 40px; }
         .invoice-wrap { max-width: 620px; margin: 0 auto; }
-<<<<<<< HEAD
-        .invoice-actions { display:flex; gap:10px; margin-bottom:16px; justify-content:flex-end; flex-wrap:wrap; }
-        .invoice-header-row { display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; }
-        table.items th, table.items td { font-size: 13px; }
-        @media print { .invoice-actions { display:none; } body { padding:0; background:#fff; } }
-
-        @media (max-width: 640px) {
-            body { padding: 14px; }
-            .invoice-actions { justify-content:stretch; }
-            .invoice-actions a, .invoice-actions button { flex:1; text-align:center; }
-            .invoice-header-row > div:last-child,
-            .invoice-header-row > div:nth-child(2) { text-align:left; }
-            .card[style*="padding:32px"] { padding: 18px !important; }
-        }
-=======
         .invoice-actions { display:flex; gap:10px; margin-bottom:16px; justify-content:flex-end; }
         table.items th, table.items td { font-size: 13px; }
         @media print { .invoice-actions { display:none; } body { padding:0; background:#fff; } }
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
     </style>
 </head>
 <body>
@@ -53,11 +33,7 @@
     </script>
 
     <div class="card" style="padding:32px;">
-<<<<<<< HEAD
-        <div class="invoice-header-row" style="margin-bottom:24px;">
-=======
         <div style="display:flex; justify-content:space-between; margin-bottom:24px;">
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
             <div>
                 <h2><?= htmlspecialchars($store['name']) ?></h2>
                 <p><?= htmlspecialchars($store['address']) ?></p>
@@ -70,11 +46,7 @@
             </div>
         </div>
 
-<<<<<<< HEAD
-        <div class="invoice-header-row" style="margin-bottom:20px; font-size:14px;">
-=======
         <div style="display:flex; justify-content:space-between; margin-bottom:20px; font-size:14px;">
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
             <div>
                 <strong>Billed To</strong><br>
                 <?= htmlspecialchars($sale['customer']['name'] ?? 'Walk-in Customer') ?>
@@ -87,10 +59,6 @@
             </div>
         </div>
 
-<<<<<<< HEAD
-        <div class="table-responsive table-narrow">
-=======
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
         <table class="items">
             <thead><tr><th>Item</th><th>Qty</th><th>Rate</th><th>GST</th><th>Amount</th></tr></thead>
             <tbody>
@@ -105,10 +73,6 @@
             <?php endforeach; ?>
             </tbody>
         </table>
-<<<<<<< HEAD
-        </div>
-=======
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
 
         <div style="margin-top:20px; padding-top:16px; border-top:1px solid var(--line);">
             <div class="pos-summary-row"><span>Subtotal</span><span>₹<?= number_format($sale['subtotal'], 2) ?></span></div>

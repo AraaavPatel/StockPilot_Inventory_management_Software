@@ -1,15 +1,7 @@
-<<<<<<< HEAD
-<div class="split-layout split-lg">
-    <div class="card">
-        <div class="card-header"><h3>Recent Adjustments</h3></div>
-        <div class="table-responsive">
-<table>
-=======
 <div style="display:grid; grid-template-columns: 1fr 360px; gap:20px; align-items:start;">
     <div class="card">
         <div class="card-header"><h3>Recent Adjustments</h3></div>
         <table>
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
             <thead><tr><th>Date</th><th>Product</th><th>Type</th><th>Qty</th><th>Reason</th><th>By</th></tr></thead>
             <tbody>
             <?php foreach ($adjustments as $a): ?>
@@ -27,10 +19,6 @@
             <?php endif; ?>
             </tbody>
         </table>
-<<<<<<< HEAD
-</div>
-=======
->>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
     </div>
 
     <div class="card">
