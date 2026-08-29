@@ -1,7 +1,11 @@
 <div class="card">
     <div class="card-header"><h3>Sales History</h3></div>
+<<<<<<< HEAD
     <div class="table-responsive">
 <table>
+=======
+    <table>
+>>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
         <thead><tr><th>Invoice</th><th>Customer</th><th>Cashier</th><th>Payment</th><th>Total</th><th>Date</th><th></th></tr></thead>
         <tbody>
         <?php foreach ($sales as $s): ?>
@@ -21,4 +25,7 @@
         </tbody>
     </table>
 </div>
+<<<<<<< HEAD
 </div>
+=======
+>>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb

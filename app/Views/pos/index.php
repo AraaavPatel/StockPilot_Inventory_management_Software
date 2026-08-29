@@ -6,7 +6,11 @@
             <span id="cameraStatus" style="font-size:11px; font-weight:700; text-transform:uppercase; color:var(--ink-soft);">Starting camera…</span>
         </div>
 
+<<<<<<< HEAD
         <div class="pos-scan-mode" style="display:flex; gap:8px; margin-bottom:12px; flex-wrap:wrap;">
+=======
+        <div class="pos-scan-mode" style="display:flex; gap:8px; margin-bottom:12px;">
+>>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
             <button type="button" class="btn btn-outline btn-sm scan-mode-btn active" id="modeCameraBtn" data-mode="camera">📷 Camera</button>
             <button type="button" class="btn btn-outline btn-sm scan-mode-btn" id="modeHardwareBtn" data-mode="hardware">🔌 USB / Hardware Scanner</button>
             <button type="button" class="btn btn-outline btn-sm scan-mode-btn" id="modeManualBtn" data-mode="manual">⌨ Manual</button>
@@ -21,7 +25,10 @@
         </div>
         <div id="suggestionsBox" style="margin-bottom:12px;"></div>
 
+<<<<<<< HEAD
         <div class="table-responsive table-narrow">
+=======
+>>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
         <table class="pos-cart-table">
             <thead>
                 <tr><th>Product</th><th>Price</th><th>Qty</th><th>GST</th><th>Total</th><th></th></tr>
@@ -30,7 +37,10 @@
                 <tr id="emptyCartRow"><td colspan="6">Cart is empty — scan a product to begin.</td></tr>
             </tbody>
         </table>
+<<<<<<< HEAD
         </div>
+=======
+>>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
     </div>
 
     <!-- RIGHT: Summary + Checkout -->

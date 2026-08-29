@@ -167,6 +167,7 @@ th, td { text-align: left; padding: 12px 10px; border-bottom: 1px solid var(--li
 th { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: #9a9a9a; font-weight: 800; border-bottom: 2px solid var(--ink); }
 tr:last-child td { border-bottom: none; }
 
+<<<<<<< HEAD
 /* Every data table on a hardware-narrower-than-content screen (phone, tablet,
    a small POS panel) scrolls horizontally inside its own card instead of
    blowing out the page layout. Table keeps a sane minimum width so columns
@@ -202,6 +203,8 @@ tr:last-child td { border-bottom: none; }
 
 .select-compact { width: 100%; min-width: 88px; flex: 1 1 88px; }
 
+=======
+>>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.03em; }
 .badge-success { background: var(--ink); color: #fff; }
 .badge-warning { background: var(--red); color: #fff; }
@@ -265,6 +268,7 @@ tr:last-child td { border-bottom: none; }
 
 .mobile-topbar-toggle { display: none; }
 
+<<<<<<< HEAD
 /* Split layouts collapse one breakpoint earlier than the sidebar (1180px vs
    960px) — a 340px fixed side panel next to a data table is already too
    tight on a small laptop or a portrait tablet well before the sidebar
@@ -283,6 +287,8 @@ tr:last-child td { border-bottom: none; }
   .form-grid-2, .form-grid-3 { grid-template-columns: 1fr; }
 }
 
+=======
+>>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
 @media (max-width: 960px) {
   .app-shell { flex-direction: column; }
 
@@ -351,6 +357,7 @@ tr:last-child td { border-bottom: none; }
   table { font-size: 12px; }
   th, td { padding: 8px 6px; }
 
+<<<<<<< HEAD
   /* iOS Safari auto-zooms the page on focus for any field under 16px —
      keep every input/select/textarea at 16px+ so typing on a phone or a
      touchscreen POS terminal never jump-zooms the layout. */
@@ -358,6 +365,11 @@ tr:last-child td { border-bottom: none; }
 
   /* ---- POS: single column, sticky checkout bar ---- */
   .pos-grid { grid-template-columns: 1fr; gap: 14px; }
+=======
+  /* ---- POS: single column, sticky checkout bar ---- */
+  .pos-grid { grid-template-columns: 1fr; gap: 14px; }
+  .pos-scan-box input { font-size: 16px; }
+>>>>>>> e54dec794bc2b19873f7a02489d8cadfa02fddeb
   .pos-qty-btn { width: 32px; height: 32px; font-size: 16px; }
 
   .pos-summary-card {
